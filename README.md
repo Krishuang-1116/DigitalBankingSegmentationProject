@@ -1,5 +1,6 @@
 # Project Overview<br>
-Stratton & Fils Private Banking Group has undertaken this analytics initiative to better understand the behavioral and demographic diversity within the existing customer base. Using unsupervised machine learning techniques—specifically PCA for dimensionality reduction and K-Means for clustering—we segmented customers across geographical, demographic, behavioral, and psychographic attributes. The objective is to identify which customer groups are most likely to adopt Stratton’s newly developed digital banking platform, created in partnership with our fintech innovation partner,with these segmentation insights guiding targeted digital onboarding initiatives, more precise marketing campaigns, and a differentiated engagement plan tailored to each customer segment’s readiness for digital financial services.
+Stratton & Fils Private Banking Group has undertaken this analytics initiative to better understand the behavioral and demographic diversity within the existing customer base. Using unsupervised machine learning techniques—specifically PCA for dimensionality reduction and K-Means for clustering—we segmented customers across geographical, demographic, behavioral, and psychographic attributes.<br> 
+The objective is to identify which customer groups are most likely to adopt Stratton’s newly developed digital banking platform, created in partnership with our fintech innovation partner,with these segmentation insights guiding targeted digital onboarding initiatives, more precise marketing campaigns, and a differentiated engagement plan tailored to each customer segment’s readiness for digital financial services.
 
 # Methods and Workflow
 ⚠️ Note: The analysis is based on the real banking dataset modeled after authentic banking attributes to illustrate customer segmentation for digital adoption, which cannot be shared publicly due to confidentiality reasons. All techniques and insights mirror real-world banking analytics workflows.
@@ -61,26 +62,34 @@ These are customers with high ATM and branch usage and low digital adoption, ind
 #### **PC4 — Mid-Corp Fund Investment Focus & Low Borrowing & Light Banking Interaction**  
 These are customers with strong preference for mid-corporate investment products (USAXSFund), low interaction activity (few branch visits, light app usage) and low overall spending and borrowing patterns
 
-### 2D PCA scatter plot
+### 2D PCA scatter plot: Segmentation Across Dominant Behavioral Dimensions
 
 <p align="center">
   <img src="images/2D PCA Scatter plot with KMeans clusters .png" width="500">
   <br>
-  <em>PCA1 as x-axis and PCA2 as y-axis</em>
+  <em>The horizontal axis (PC1) captures digital engagement, tech-savviness, and risk tolerance.<br>
+      The vertical axis (PC2) reflects proactive bank interaction, market investments, and consumer spending.</em>
 </p>
 
-### Interpretation
-- Clusters 2 and 6 demonstrate strong digital affinity, tech openness and high risk tolerance
-- Cluster 0 exhibits huge spending and investment potential along with high bank engagement
-- Cluster 4 
- 
+### Key observations
+#### Clusters **2**, **6**, and **0** should be prioritized for the **first wave of digital banking rollout and marketing campaigns**
+- Clusters 2 and 6 sit at the far right of PC1, indicating strong digital affinity, tech openness and high risk tolerance.
+- Cluster 0 occupies the upper-left region with the highest PC2 scores, exhibiting huge spending and investment potential and strong engagement with Stratton's services
+#### Other clusters represent secondary targets or segments requiring different onboarding approaches
+- Clusters positioned between these extremes show moderate digital readiness or traditional banking reliance.
 
-# Cluster interpretation
-## Summary 
-- Profile each cluster using means of attribute.
-- Visualize clusters based on top 10 attirbutes in terms of weighted PCA loading.
-- Used supplementary variables (geographical + demographic) to add socio-demographic context.
 
+# Cluster interpretation and Recommendations
+## Target Segments
+- Primary Targets: Clusters 2, 6, 0 (high digital readiness OR high value).
+- Secondary Targets: mid-range clusters showing partial openness to digital tools.
+- Low Readiness Segments: traditional clusters requiring guided onboarding & education.
+- Investment-Focused Segments: tailor features around portfolio tracking & advisory services.
+
+### Cluster profiling (standardized) based on top 10 behavioral/psychographic attributes
+
+
+### Cluster profiling (standardized) based on geographical/demographic attributes 
 
 
 
