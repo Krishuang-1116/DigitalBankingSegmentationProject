@@ -67,8 +67,8 @@ These are customers with strong preference for mid-corporate investment products
 <p align="center">
   <img src="images/2D PCA Scatter plot with KMeans clusters .png" width="500">
   <br>
-  <em>The horizontal axis (PC1) captures digital engagement, tech-savviness, and risk tolerance.<br>
-      The vertical axis (PC2) reflects proactive bank interaction, market investments, and consumer spending.</em>
+  <em>The horizontal axis (PCA1) captures digital engagement, tech-savviness, and risk tolerance.<br>
+      The vertical axis (PCA2) reflects proactive bank interaction, market investments, and consumer spending.</em>
 </p>
 
 ### Key observations
