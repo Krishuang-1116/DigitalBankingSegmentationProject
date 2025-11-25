@@ -14,7 +14,7 @@ The dataset consists of 10750 records with 28 attributes, categorized into demog
 </p>
 
 <p align="center">
-  <img src="images/ Active variables.png" width="500">
+  <img src="images/Active variables.png" width="500">
   <br>
   <em>Active variables: Capture customers' behavioral differences</em>
 </p>
