@@ -22,7 +22,15 @@ The dataset consists of 10750 records with 28 attributes, categorized into demog
 
 ## 2. Exploratory KMeans
 * Chose the pptimal cluster number 7 from elbow method and silhouette score plot.
-* Raw KMeans with cluster number 7 produces a silhouette score of ~0.60. 
+* Raw KMeans with cluster number 7 produces a silhouette score of ~0.60.
+
+<p align="center">
+  <img src="images/raw_kmeans.png" width="500">
+  <br>
+  <em>The lower the inertia, the better.<br>
+      The higher the silhouette score, the better.</em>
+</p>
+  
 
 ## 3. Refined KMeans on PCA-transformed attributes
 ### Summary 
@@ -56,16 +64,22 @@ These are customers with strong preference for mid-corporate investment products
 ### 2D PCA scatter plot
 
 <p align="center">
-  <img src="images/2D PCA Scatter plot with KMeans clusters.png" width="800">
+  <img src="images/2D PCA Scatter plot with KMeans clusters .png" width="500">
   <br>
-  <em>PCA1 as x-axis and PCA2 as y-axis.</em>
+  <em>PCA1 as x-axis and PCA2 as y-axis</em>
 </p>
+
+### Interpretation
+- Clusters 2 and 6 demonstrate strong digital affinity, tech openness and high risk tolerance
+- Cluster 0 exhibits huge spending and investment potential along with high bank engagement
+- Cluster 4 
+ 
 
 # Cluster interpretation
 ## Summary 
 - Profile each cluster using means of attribute.
 - Visualize clusters based on top 10 attirbutes in terms of weighted PCA loading.
-- 11 Supplementary variables (geographical + demographic) used to add socio-demographic context.
+- Used supplementary variables (geographical + demographic) to add socio-demographic context.
 
 
 
