@@ -8,10 +8,17 @@ Stratton & Fils Private Banking Group has undertaken this analytics initiative t
 The dataset consists of 10750 records with 28 attributes, categorized into demographic, geographical, behavioral, and psychographic groups.
 
 <p align="center">
-  <img src="images/PCA loadings.png" width="800">
+  <img src="images/Supplementary variables.png" width="500">
   <br>
-  <em>28 variables categorized into 4 groups.</em>
+  <em>Supplementary variables: Explain cluster differences in age, income, location</em>
 </p>
+
+<p align="center">
+  <img src="images/ Active variables.png" width="500">
+  <br>
+  <em>Active variables: Capture customers' behavioral differences</em>
+</p>
+
 
 ## 2. Exploratory KMeans
 * Chose the pptimal cluster number 7 from elbow method and silhouette score plot.
