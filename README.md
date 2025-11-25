@@ -3,7 +3,7 @@ Stratton & Fils Private Banking Group has undertaken this analytics initiative t
 We have successfully identified **3750 out of 10750** customers as our target group for the first wave of digital banking rollout, who display strong digital affinity, medium to high risk tolerance and huge spending potential.
 
 # Methods and Workflow
-⚠️ Note: The analysis is based on the real banking dataset modeled after authentic banking attributes to illustrate customer segmentation for digital adoption, which cannot be shared publicly due to confidentiality reasons. All techniques and insights mirror real-world banking analytics workflows.
+⚠️ Note: The analysis is based on the real banking dataset modeled after authentic banking attributes to illustrate customer segmentation for digital adoption, which cannot be shared publicly due to confidentiality reasons. However, all techniques and insights mirror real-world banking analytics workflows.
 
 ## 1. Data Preparation
 The dataset consists of 10750 records with 28 attributes, categorized into demographic, geographical, behavioral, and psychographic groups.
@@ -57,7 +57,7 @@ These are customers active in online activities and use of mobile/digital bankin
 These are customers exhibiting high stock/NASDAQ investment activity (mid–high risk tolerance) combined with strong consumer spending patterns (credit card and grocery spending).
 
 #### **PC3 — Traditional Banking Preference & Moderate Spending**  
-These are customers with high ATM and branch usage and low digital adoption, indicating a preference for in-person banking.
+These are customers with high ATM and branch usage and low digital adoption, indicating a preference for traditional in-person banking.
 
 #### **PC4 — Mid-Corp Fund Investment Focus & Low Borrowing & Light Banking Interaction**  
 These are customers with strong preference for mid-corporate investment products (USAXSFund), low interaction activity (few branch visits, light app usage) and low overall spending and borrowing patterns
@@ -76,7 +76,7 @@ These are customers with strong preference for mid-corporate investment products
 - Clusters 2 and 6 sit at the far right of PC1, indicating strong digital affinity, tech openness and high risk tolerance.
 - Cluster 0 occupies the upper-left region with the highest PC2 scores, exhibiting huge spending and investment potential and strong engagement with Stratton's services
 #### Other clusters represent secondary targets or segments requiring different onboarding approaches
-- Clusters positioned between these extremes show moderate digital readiness or traditional banking reliance.
+- Clusters positioned between these extremes show moderate digital readiness and traditional banking reliance (clusters 4 and 5) or light engagement with the bank (clusters 1 and 3).
 
 
 # Cluster interpretation and Recommendations
