@@ -1,6 +1,6 @@
-# Project Overview<br>
-Stratton & Fils Private Banking Group has undertaken this analytics initiative to better understand the behavioral and demographic diversity within the existing customer base. Using unsupervised machine learning techniques—specifically PCA for dimensionality reduction and K-Means for clustering—we segmented customers across geographical, demographic, behavioral, and psychographic attributes.<br> 
-The objective is to identify which customer groups are most likely to adopt Stratton’s newly developed digital banking platform, created in partnership with our fintech innovation partner,with these segmentation insights guiding targeted digital onboarding initiatives, more precise marketing campaigns, and a differentiated engagement plan tailored to each customer segment’s readiness for digital financial services.
+# Project Overview
+Stratton & Fils Private Banking Group has undertaken this analytics initiative to better understand the behavioral and demographic diversity within the existing customer base. Using unsupervised machine learning techniques, specifically PCA for dimensionality reduction and K-Means for clustering, our objective is to identify which customer groups are most likely to adopt Stratton’s newly developed digital banking platform, created in partnership with our fintech innovation partner. <br>
+We have successfully identified **3750 out of 10750** customers as our target group for the first wave of digital banking rollout, who display strong digital affinity, medium to high risk tolerance and huge spending potential.
 
 # Methods and Workflow
 ⚠️ Note: The analysis is based on the real banking dataset modeled after authentic banking attributes to illustrate customer segmentation for digital adoption, which cannot be shared publicly due to confidentiality reasons. All techniques and insights mirror real-world banking analytics workflows.
@@ -87,9 +87,9 @@ These are customers with strong preference for mid-corporate investment products
 - Investment-Focused Segments: tailor features around portfolio tracking & advisory services.
 
 ### Cluster profiling (standardized) based on top 10 behavioral/psychographic attributes
-[🔗 Interactive Radar – Active Variables](https://krishuang-1116.github.io/DigitalBankingSegmentationProject/cluster_profiles_active_vars.html) 
+[🔗 Interactive Dashboard – Active Variables](https://krishuang-1116.github.io/DigitalBankingSegmentationProject/cluster_profiles_active_vars.html) 
 
 ### Cluster profiling (standardized) based on geographical/demographic attributes 
-[🔗 Interactive Radar – Supplementary Variables](https://krishuang-1116.github.io/DigitalBankingSegmentationProject/cluster_profiles_supplementary_vars.html))
+[🔗 Interactive Dashboard – Supplementary Variables](https://krishuang-1116.github.io/DigitalBankingSegmentationProject/cluster_profiles_supplementary_vars.html))
 
 
