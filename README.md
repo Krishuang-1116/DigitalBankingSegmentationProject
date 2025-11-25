@@ -1,105 +1,56 @@
-🔍 Project Overview<br>
+# Project Overview<br>
 Stratton & Fils Private Banking Group has undertaken this analytics initiative to better understand the behavioral and demographic diversity within the existing customer base. Using unsupervised machine learning techniques—specifically PCA for dimensionality reduction and K-Means for clustering—we segmented customers across geographical, demographic, behavioral, and psychographic attributes. The objective is to identify which customer groups are most likely to adopt Stratton’s newly developed digital banking platform, created in partnership with our fintech innovation partner,with these segmentation insights guiding targeted digital onboarding initiatives, more precise marketing campaigns, and a differentiated engagement plan tailored to each customer segment’s readiness for digital financial services.
 
-🧮 Methods and Workflow<br>
+# Methods and Workflow
 ⚠️ Note: The analysis is based on the real banking dataset modeled after authentic banking attributes to illustrate customer segmentation for digital adoption, which cannot be shared publicly due to confidentiality reasons. All techniques and insights mirror real-world banking analytics workflows.
 
-1. Data Preparation<br>
+## 1. Data Preparation
 The dataset consists of 10750 records with 28 attributes, categorized into demographic, geographical, behavioral, and psychographic groups.
 
-<insert graph> here
+<p align="center">
+  <img src="images/PCA loadings.png" width="800">
+  <br>
+  <em>28 variables categorized into 4 groups.</em>
+</p>
 
-2. Exploratory KMeans
-* Optimal cluster number 7 chosen from elbow method and silhouette score plot.
+## 2. Exploratory KMeans
+* Chose the pptimal cluster number 7 from elbow method and silhouette score plot.
 * Raw KMeans with cluster number 7 produces a silhouette score of ~0.60. 
 
-3. Refined KMeans on PCA-transformed attributes
-* 4 principle components extracted from 17 active variables (behavioral + psychographic attributes) to uncover latent features
-🧭 PC1 — Digital Engagement + Tech-Savviness + High Risk Preference
-Themes
-Heavy digital banking usage/High online activity/High-risk crypto/NFT investments/Tech-forward, innovation-adopting customers
+## 3. Refined KMeans on PCA-transformed attributes
+### Summary 
+- Extracted 4 principal components from 17 active variables (behavioral + psychographic) to reduce dimensionality and uncover latent drivers.
+- Applied KMeans on both raw data and PCA-transformed data to assess segmentation stability.
+- Cluster stability validated by comparing label distributions and overlaps between raw vs. PCA-based cluster assignments.
+- Final model uses PCA-derived cluster labels, supported by a significantly improved silhouette score (~0.81) after mitigating multicollinearity present in the raw dataset.
 
-Interpretation
-PC1 loads strongly on InternetTrafficVolume, TimeOnlineBanking, AppLogins, SocialMediaInter, and especially Bitcoins and NFTs.
-This combination represents customers who:
-Are heavy online and mobile users
-Adopt new financial technologies early (crypto/NFTs)
-Show higher risk tolerance and digital financial literacy
+### PCA Loading Matrix
 
-🧭 PC2 — Proactive Bank Interaction + Market Investments + Consumer Spending
+<p align="center">
+  <img src="images/PCA loadings.png" width="800">
+  <br>
+  <em>Loadings for PC1 to PC4 showing dominant behavioral and psychographic drivers across components.</em>
+</p>
 
-Themes:
+### Interpretation of Principal Components
 
-Active relationship with the bank
+#### **PC1 — Digital Engagement & Tech-Savviness & High Risk Preference**  
+These are customers active in online activities and use of mobile/digital banking, with high risk tolerance indicated by crypto/NFT involvement.
 
-Engaged in stock/market investments
+#### **PC2 — Proactive Bank Interaction & Market Investments & Consumer Spending**  
+These are customers exhibiting high stock/NASDAQ investment activity (mid–high risk tolerance) combined with strong consumer spending patterns (credit card and grocery spending).
 
-Higher discretionary spending
+#### **PC3 — Traditional Banking Preference & Moderate Spending**  
+These are customers with high ATM and branch usage and low digital adoption, indicating a preference for in-person banking.
 
-Interpretation:
-PC2 has high positive loadings on NASDAQInvest, StockVolume, and CreditCardSpending, as well as GrocerySpending.
-This indicates customers who:
+#### **PC4 — Mid-Corp Fund Investment Focus & Low Borrowing & Light Banking Interaction**  
+These are customers with strong preference for mid-corporate investment products (USAXSFund), low interaction activity (few branch visits, light app usage) and low overall spending and borrowing patterns
 
-Invest actively in market assets (mid–high risk tolerance)
-
-Spend consistently across categories
-
-Maintain regular interactions with the bank
-
-👉 PC2 represents a “Financially Active, Higher-Spending Investors” dimension.
-
-#### 🧭 PC3 — Traditional Banking Users + Moderate Spending + Limited Digital Touchpoints
-
-Themes:
-
-Reliance on branch/ATM
-
-Lower digital adoption
-
-Moderate investment and spending behavior
-
-Interpretation:
-PC3 shows high loadings on ATMVisits, ServiceFees, and BranchVisits, with noticeable negative relationships for digital variables.
-These customers:
-
-Prefer traditional, in-person banking channels
-
-Use less online and mobile banking
-
-Maintain moderate account activity and investment amounts
-
-👉 PC3 captures a “Traditional Banking Preference / Low Digital Adoption” behavioral axis.
-
-#### 🧭 PC4 — Mid-Corp Fund Investment Focus + Low Borrowing + Light Banking Interaction
-
-Themes:
-
-Strong preference for mid-corporate investment products
-
-Low engagement across other services
-
-Light user of borrowing/credit-related activities
-
-Interpretation:
-PC4 loads strongly on USAXSFundInvest (bank-owned medium-size corporate funds), with relatively low contributions from lending or digital engagement variables.
-These customers:
-
-Prefer stable, mid-corporate investment instruments
-
-Show low interaction intensity (few branch visits, light app usage)
-
-Have low overall spending and borrowing patterns
-
-👉 PC4 reflects a “Mid-Corporate Fund Investors / Low-Interaction Customers” profile.
-
-
-* Cluster stability tested by examining the distribution of cluster labels and the overlaps in labels derived from raw vs PCA-transformed data.
-* Settled with the PCA cluster label since the silhouette score significantly improved to ~0.81 as the issue of multicollinearity inherent in the raw data is removed. 
-
-4. Cluster interpretation
-* Profile each cluster using means of attribute.
-* Visualize clusters based on top 10 attirbutes in terms of weighted PCA loading.
-* 11 Supplementary variables (geographical + demographic) used to add socio-demographic context.
+# Cluster interpretation
+## Summary 
+- Profile each cluster using means of attribute.
+- Visualize clusters based on top 10 attirbutes in terms of weighted PCA loading.
+- 11 Supplementary variables (geographical + demographic) used to add socio-demographic context.
 
 
 
