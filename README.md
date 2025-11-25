@@ -87,10 +87,9 @@ These are customers with strong preference for mid-corporate investment products
 - Investment-Focused Segments: tailor features around portfolio tracking & advisory services.
 
 ### Cluster profiling (standardized) based on top 10 behavioral/psychographic attributes
-[🔗 Interactive Radar – Active Variables](plots/cluster_profiles_active.html)  
-[🔗 Interactive Radar – Supplementary Variables](plots/cluster_profiles_supplementary_vars.html) '/Users/krishuang/Desktop/24fall/6.课程/M2.T1/Marketing analytics/Session 2 Markdown/cluster_profiles_supplementary_vars.html'
+[🔗 Interactive Radar – Active Variables](images/cluster_profiles_active_vars.html)  
 
 ### Cluster profiling (standardized) based on geographical/demographic attributes 
-
+[🔗 Interactive Radar – Supplementary Variables](images/cluster_profiles_supplementary_vars.html)
 
 
