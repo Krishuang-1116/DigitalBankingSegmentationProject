@@ -53,6 +53,14 @@ These are customers with high ATM and branch usage and low digital adoption, ind
 #### **PC4 — Mid-Corp Fund Investment Focus & Low Borrowing & Light Banking Interaction**  
 These are customers with strong preference for mid-corporate investment products (USAXSFund), low interaction activity (few branch visits, light app usage) and low overall spending and borrowing patterns
 
+### 2D PCA scatter plot
+
+<p align="center">
+  <img src="images/2D PCA Scatter plot with KMeans clusters.png" width="800">
+  <br>
+  <em>PCA1 as x-axis and PCA2 as y-axis.</em>
+</p>
+
 # Cluster interpretation
 ## Summary 
 - Profile each cluster using means of attribute.
